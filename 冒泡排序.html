@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script type="text/javascript"src="../jQuery/jquery-1.11.0.min.js"></script>
+	<script>
+		var arr=[100,2,500,3,9,1,5,2,3];
+		function Arr(arr){
+			for(var i=0;i<arr.length-1;i++){
+				for(var j=i+1; j<arr.length;j++){
+					if(arr[i]<arr[j]){
+						var x=arr[i];
+						arr[i]=arr[j];
+						arr[j]=x;
+					}
+				}
+			}
+			return arr;
+		}
+		Arr(arr);
+		document.write(arr);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
